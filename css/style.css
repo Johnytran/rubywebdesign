@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+.container-fluid{
+  height: 768px;
+  background: url(../images/bg.jpg) no-repeat;
+  position: relative;
+}
+img.logo{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+img.logo-design{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+img.stunning-template{
+  position: absolute;
+  top: 130px;
+  right: 200px;
+}
+img.fast-loading{
+  position: absolute;
+  top: 320px;
+  right: 100px;
+}
+img.free-quote{
+  position: absolute;
+  bottom: 0;
+  right: 300px;
+}
+img.web-nail{
+  position: absolute;
+  top: 260px;
+  right: 350px;
+}
+img.cool-animation{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+img.quick-build{
+  position: absolute;
+  bottom: 60px;
+  right: 200px;
+}
