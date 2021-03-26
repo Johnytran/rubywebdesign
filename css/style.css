@@ -193,3 +193,34 @@ img.quick-build{
     transform:translateX(-200px);
   }
 }
+
+ /* ---------------------------------------responsive */
+ @media screen and (max-width: 600px) {
+   img.stunning-template{
+     right: 20px;
+     top: 140px;
+     width: 130px;
+   }
+   @keyframes stunning_move {
+     from {right: 0;}
+     to {right: 20px;}
+   }
+   img.web-nail{
+      top: 123px;
+      right: 170px;
+      width: 185px;
+   }
+   @keyframes webnail_move {
+     from {right: 0;}
+     to {right: 170px;}
+   }
+   img.logo-design {
+      width: 200px;
+   }
+   img.fast-loading {
+      width: 150px;
+   }
+   img.quick-build {
+      width: 175px;
+   }
+}
