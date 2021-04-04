@@ -28,8 +28,18 @@ img.stunning-template{
   animation-duration: 2.5s;
 }
 @keyframes stunning_move {
-  from {right: 0;}
-  to {right: 200px;}
+  from {
+    right: 0;
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    filter: blur(5px);
+  }
+  to {
+    right: 200px;
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
 }
 img.fast-loading{
   position: absolute;
@@ -41,8 +51,18 @@ img.fast-loading{
   animation-timing-function: ease-out;
 }
 @keyframes fastloading_move {
-  from {right: 0;}
-  to {right: 100px;}
+  from {
+    right: 0;
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    filter: blur(5px);
+  }
+  to {
+    right: 100px;
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
 }
 img.free-quote{
   position: absolute;
@@ -60,8 +80,18 @@ img.web-nail{
   animation-timing-function: ease-in;
 }
 @keyframes webnail_move {
-  from {right: 0;}
-  to {right: 350px;}
+  from {
+    right: 0;
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    filter: blur(5px);
+  }
+  to {
+    right: 350px;
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
 }
 img.cool-animation{
   position: absolute;
@@ -79,8 +109,18 @@ img.quick-build{
   animation-timing-function: linear;
 }
 @keyframes quick_move {
-  from {right: 0;}
-  to {right: 200px;}
+  from {
+    right: 0;
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    filter: blur(5px);
+  }
+  to {
+    right: 200px;
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
 }
 .bubbles{
   position:absolute;
@@ -223,4 +263,11 @@ img.quick-build{
    img.quick-build {
       width: 175px;
    }
+}
+
+/* -------------------------------------------blur */
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
 }
