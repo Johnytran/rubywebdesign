@@ -72,8 +72,8 @@ img.free-quote{
 }
 img.web-nail{
   position: absolute;
-  top: 260px;
-  right: 350px;
+  top: 250px;
+  width: 300px;
   z-index: 1000;
   animation-name: webnail_move;
   animation-duration: 1s;
@@ -242,8 +242,18 @@ img.quick-build{
      width: 130px;
    }
    @keyframes stunning_move {
-     from {right: 0;}
-     to {right: 20px;}
+     from {
+       right: 0;
+       opacity: 0;
+       transform: translate3d(100%, 0, 0);
+       filter: blur(5px);
+     }
+     to {
+       right: 20px;
+       opacity: 1;
+       transform: none;
+       filter: blur(0);
+     }
    }
    img.web-nail{
       top: 123px;
@@ -251,18 +261,49 @@ img.quick-build{
       width: 185px;
    }
    @keyframes webnail_move {
-     from {right: 0;}
-     to {right: 170px;}
+     from {
+       right: 0;
+       opacity: 0;
+       transform: translate3d(100%, 0, 0);
+       filter: blur(5px);
+     }
+     to {
+       right: 170px;
+       opacity: 1;
+       transform: none;
+       filter: blur(0);
+     }
    }
    img.logo-design {
       width: 200px;
    }
    img.fast-loading {
       width: 150px;
+      top: 297px;
+   }
+   @keyframes fastloading_move {
+     from {
+       right: 0;
+       opacity: 0;
+       transform: translate3d(100%, 0, 0);
+       filter: blur(5px);
+     }
+     to {
+       right: 50px;
+       opacity: 1;
+       transform: none;
+       filter: blur(0);
+     }
    }
    img.quick-build {
-      width: 175px;
+     width: 137px;
+     bottom: 184px;
    }
+
+   img.free-quote {
+     right: 196px;
+     width: 150px;
+  }
 }
 
 /* -------------------------------------------blur */
@@ -270,4 +311,15 @@ img.quick-build{
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 0.3s;
+}
+
+/* ------------------------------------template page */
+
+.template{
+  background: url(../images/template_bg.jpg) top center no-repeat;
+  height: 768px;
+}
+.img_tmpl_head{
+  width: 100%;
+  margin: 30px 0;
 }
