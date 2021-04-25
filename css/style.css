@@ -320,11 +320,22 @@ img.quick-build{
   height: 768px;
 }
 .temp_head_col{
-  text-align: center;
+  position: relative;
+  height: 200px;
+}
+.temp_head_col img{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .img_tmpl_head{
-  width: 70%;
-  margin: 30px auto;
+
+}
+.temp_head_col img.sunlight{
+  mix-blend-mode: plus-lighter;
 }
 .flip-items li .flipster__item__content{
   background: url(../images/border_item.png) center center no-repeat;
