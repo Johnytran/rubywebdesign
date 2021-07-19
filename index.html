@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/jquery.flipster.css">
 
     <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/star.css">
 
 
     <script src='js/jquery.min.js'></script>
@@ -17,6 +18,7 @@
     <script src='js/bootstrap.min.js'></script>
 
     <script src="js/jquery.flipster.min.js"></script>
+
 
   </head>
   <body>
@@ -52,7 +54,7 @@
     </section>
 
     <section class="cd-section">
-      <div class="container-fluid template">
+      <div class="container-fluid template" id="app">
         <div class="row">
           <div class="col-sm temp_head_col">
             <img src="images/template_header.png" alt="The Nail Template World" class="img_tmpl_head"/>
@@ -92,18 +94,18 @@
                     <div class="inner-item">
                       <a
                         data-fancybox="xxx"
-                        data-src="https://lipsum.app/id/2/1024x768"
-                        data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+                        data-src="img/naildesign1.jpg"
+                        data-caption="Home page"
                       >
-                        <img src="https://lipsum.app/id/2/200x150" />
+                        <img src="img/naildesign1s.jpg" />
                       </a>
                       <div style="display:none;">
-                        <a data-fancybox="xxx" data-src="https://lipsum.app/id/3/1024x768">
-                          <img src="https://lipsum.app/id/3/200x150" />
+                        <a data-fancybox="xxx" data-src="img/naildesign2.jpg" data-caption="Gallery page">
+                          <img src="img/naildesign2s.jpg" />
                         </a>
 
-                        <a data-fancybox="xxx" data-src="https://lipsum.app/id/4/1024x768">
-                          <img src="https://lipsum.app/id/4/200x150" />
+                        <a data-fancybox="xxx" data-src="img/naildesign3.jpg" data-caption="Contact page">
+                          <img src="img/naildesign3s.jpg" />
                         </a>
                       </div>
                     </div>
@@ -156,5 +158,6 @@
 
 
     <script src='js/fancybox.umd.js'></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

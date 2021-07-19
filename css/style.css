@@ -316,7 +316,7 @@ img.quick-build{
 /* ------------------------------------template page */
 
 .template{
-  background: url(../images/template_bg.jpg) top center no-repeat;
+  background: #1b0222;
   height: 768px;
 }
 .temp_head_col{
