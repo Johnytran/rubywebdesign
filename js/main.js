@@ -11,7 +11,7 @@ const myRand = () => {
 for (let i = 0; i < 50; i++) {
   const delay = Math.random() + 's';
   const el = document.createElement('img')
-  el.src            = 'https://dl.dropboxusercontent.com/s/soxcov4m81dx55l/star.svg'
+  el.src            = 'images/star.svg'
   el.className      = 'glitter-star'
   el.style.top      = myRand() + '%'
   el.style.left     = myRand() + '%'

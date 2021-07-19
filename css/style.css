@@ -235,7 +235,13 @@ img.quick-build{
 }
 
  /* ---------------------------------------responsive */
+ @media screen and (max-width: 800px) {
+   .img_tmpl_head{
+     width: 100%;
+   }
+ }
  @media screen and (max-width: 600px) {
+
    img.stunning-template{
      right: 20px;
      top: 140px;
@@ -331,9 +337,7 @@ img.quick-build{
   right: 0;
   bottom: 0;
 }
-.img_tmpl_head{
 
-}
 .temp_head_col img.sunlight{
   mix-blend-mode: plus-lighter;
 }
