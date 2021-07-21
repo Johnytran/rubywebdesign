@@ -67,7 +67,13 @@
               <ul class="flip-items">
                   <li data-flip-title="Red">
                     <div class="inner-item">
-                      <img src="img/t1.jpg">
+                      <a
+                        data-fancybox="vipnail"
+                        data-src="img/vipnail.gif"
+                        data-caption="Home page"
+                      >
+                        <img src="img/vipnail.gif" />
+                      </a>
                     </div>
                   </li>
                   <li data-flip-title="Razzmatazz" data-flip-category="Purples">
@@ -137,14 +143,15 @@
                   fadeIn: 400,
                   start: 'center',
                   scrollwheel: true,
-                  touch: true,
+                  touch: false,
                   style: 'coverflow',
                   autoplay: false,
                   loop: true,
                   spacing: -0.6,
                   fadeIn: 400,
                   itemContainer: 'ul',
-                  itemSelector: 'li'
+                  itemSelector: 'li',
+                  buttons: false
                 });
             </script>
 

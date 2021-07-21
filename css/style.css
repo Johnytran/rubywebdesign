@@ -328,6 +328,7 @@ img.quick-build{
 .temp_head_col{
   position: relative;
   height: 200px;
+  overflow: hidden;
 }
 .temp_head_col img{
   position: absolute;
