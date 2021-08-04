@@ -360,3 +360,33 @@ img.quick-build{
   overflow: hidden;
   height: 151px;
 }
+.quick_title{
+  position: relative;
+  background: rgb(143, 35, 132);
+  margin-left: 20px;
+  padding: 5px 20px;
+  color: wheat;
+  font-size: 30px;
+  box-shadow: 6px 8px 10px -5px rgba(180, 17, 169, 0.74);
+}
+.quick_title:before, .quick_title:after {
+  content: "";
+  position: absolute;
+}
+.quick_title:before {
+  width: 7px;
+  top: 0;
+  left: -6.5px;
+  padding: 0 0 7px;
+  background: inherit;
+  border-radius: 5px 0 0 5px;
+  height: 55px;
+}
+.quick_title:after {
+  width: 5px;
+  height: 5px;
+  bottom: -5px;
+  left: -4.5px;
+  background: lightblue;
+  border-radius: 5px 0 0 5px;
+ }
