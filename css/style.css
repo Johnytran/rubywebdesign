@@ -412,6 +412,5 @@ img.quick-build{
   min-height: 200px;
 }
 .wrap_quick{
-  background: rgba(200, 126, 19, 0.61);
-
+  background: url(../images/pat1.png) repeat;
 }
