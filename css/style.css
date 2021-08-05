@@ -450,7 +450,8 @@ img.quick-build{
 .logo_design .content:before, .logo_design .content:after{
   position:absolute;
   content:"";
-  bottom:12px;left:15px;top:80%;
+  bottom:12px;left:15px;
+  height: 100px;
   width:45%;
   background: #170f0c;
   z-index:-1;
