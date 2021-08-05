@@ -4,7 +4,7 @@ body{
 
 }
 .container-fluid{
-  height: 768px;
+  min-height: 768px;
   background: url(../images/bg.jpg) no-repeat;
   position: relative;
 }
@@ -323,7 +323,6 @@ img.quick-build{
 
 .template{
   background: #1b0222;
-  height: 768px;
 }
 .temp_head_col{
   position: relative;
@@ -410,7 +409,14 @@ img.quick-build{
   padding: 10px;
   border-radius: 0 10px 10px 0;
   min-height: 200px;
+  color: rgb(161, 222, 143);
+  font-size: 16px;
+  text-shadow: 3px 3px 7px rgb(164, 35, 100);
 }
 .wrap_quick{
-  background: url(../images/pat1.png) repeat;
+  /* background: url(../images/pat1.png) repeat; */
+}
+.quick_text{
+  background-image: linear-gradient(51deg, #902fb6, rgb(195, 115, 175) 51.26%, #de3375), url(../images/pat1.png);
+  background-blend-mode: multiply;
 }
