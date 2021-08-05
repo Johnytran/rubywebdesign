@@ -420,3 +420,23 @@ img.quick-build{
   background-image: linear-gradient(51deg, #902fb6, rgb(195, 115, 175) 51.26%, #de3375), url(../images/pat1.png);
   background-blend-mode: multiply;
 }
+.logo_design{
+  background: none;
+  height: 768px;
+  background-image: radial-gradient(#4e4e50, #18181a);
+}
+.logo_design h1{
+  text-align: center;
+  background: -webkit-linear-gradient(#bf953f, #fcf6ba 28.99%, #b38728 51.26%, #fbf5b7 74.79%, #aa771c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'beautyregular';
+  font-size: 65px;
+}
+.logo_design .content{
+  min-height: 300px;
+  min-width: 300px;
+  background-image: linear-gradient(#161618, #323234);
+  margin: 10%;
+
+}
