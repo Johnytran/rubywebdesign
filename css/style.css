@@ -549,15 +549,12 @@ img.quick-build{
 
 .app_design{
   min-height: 768px;
-  background-image: linear-gradient(120deg, #C850C0 6%, #12053a 100%);
+  background-image: linear-gradient(120deg, #12053a 6%, #C850C0 100%);
   z-index: -2;
 }
 .app_design h1{
   text-align: center;
-  background: -webkit-linear-gradient(#bf953f, #fcf6ba 28.99%, #b38728 51.26%, #fbf5b7 74.79%, #aa771c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* font-family: 'beautyregular'; */
+  color: white;
   font-size: 40px;
 }
 .app_design .content{
@@ -578,4 +575,25 @@ img.quick-build{
 }
 .content_right{
   padding: 150px 0 0 0;
+}
+.cls-10{
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: draw 15s linear forwards;
+  fill-opacity: 0;
+}
+.cls-6{
+  animation: draw2 5s linear forwards;
+  fill-opacity: 0;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+}
+@keyframes draw2 {
+  to {
+    fill-opacity: 1;
+  }
 }
