@@ -20,9 +20,34 @@
 
     <script src="js/jquery.flipster.min.js"></script>
 
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
   </head>
   <body>
 
+
+
+    <div class="wrap_home_menu">
+      <div class="parent_home_menu">
+        <ul class="home_menu">
+          <li>
+            <a href="#" data-tooltip="Home" data-position="right" class="right"><ion-icon name="home"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#" data-tooltip="About Us" data-position="right" class="right"><ion-icon name="contacts"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#" data-tooltip="Services" data-position="right" class="right"><ion-icon name="apps"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#" data-tooltip="Contact Us" data-position="right" class="right"><ion-icon name="call"></ion-icon></a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
 
     <section class="cd-section">
       <div class="container-fluid">
@@ -53,7 +78,7 @@
       </div>
     </section>
     <!-- nail template -->
-    <section class="cd-section">
+    <section class="cd-section template">
       <div class="container-fluid template" id="app">
         <div class="row">
           <div class="col-sm temp_head_col">
@@ -108,7 +133,7 @@
                 var coverflow = $("#coverflow").flipster({
                   fadeIn: 400,
                   start: 'center',
-                  scrollwheel: true,
+                  scrollwheel: false,
                   touch: false,
                   style: 'coverflow',
                   autoplay: false,
@@ -124,28 +149,10 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-12">
-            <h1><span class="quick_title">Quick Nail Play</span></h1>
-          </div>
-        </div>
-        <div class="row quick_text">
-          <div class="col-sm-3 wrap_quick">
-            <div class="photo_quick">
-              <img src="images/quick_nail.png"/>
-            </div>
-          </div>
-          <div class="col-sm-9 wrap_quick">
-            <div class="content_quick">
-              <p>Start from $100 USD you can own a website with stunning template. Pick a favorite template above and then put content to it. Your website will be deployed in a day.</p>
-              <p>Do it from now by selecting a template above and order it. We will contact with you in minutes.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <!-- logo design -->
-    <section class="cd-section">
+    <section class="cd-section logo">
       <div class="container-fluid logo_design">
         <div class="row">
           <div class="col-sm">
@@ -167,9 +174,6 @@
                 <div class="box">
                   <img src="images/HA.png"/>
                 </div>
-                <div class="box">
-                  logo
-                </div>
 
                 <div class="more">
                   <a href="/logo-design.html">
@@ -183,7 +187,7 @@
       </div>
     </section>
     <!-- app design -->
-    <section class="cd-section">
+    <section class="cd-section app">
       <div class="container-fluid app_design">
         <div class="row">
           <div class="col-sm">
@@ -209,19 +213,8 @@
                     <img src="images/meditation.png"/>
                   </div>
                   <div class="box">
-                    logo
+                    <img src="images/videosplay.png"/>
                   </div>
-                  <div class="box">
-                    logo
-                  </div>
-                  <div class="box">
-                    logo
-                  </div>
-                  <div class="box">
-                    logo
-                  </div>
-
-
               </div>
             </div>
 
