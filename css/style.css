@@ -237,10 +237,18 @@ img.quick-build{
  /* ---------------------------------------responsive */
  @media screen and (max-width: 800px) {
    .img_tmpl_head{
-     width: 100%;
+     width: 70%;
    }
  }
  @media screen and (max-width: 600px) {
+
+   .app_slogan {
+      text-align: center;
+    }
+
+    .app_design .content_right {
+      padding: 50px 0 20px 0;
+    }
 
    img.stunning-template{
      right: 20px;
@@ -323,6 +331,7 @@ img.quick-build{
 
 .template{
   background: #1b0222;
+  min-height: 558px;
 }
 .temp_head_col{
   position: relative;
@@ -421,7 +430,7 @@ img.quick-build{
 }
 .logo_design{
   background: none;
-  min-height: 768px;
+  min-height: 668px;
   background-image: radial-gradient(#4e4e50, #18181a);
   z-index: -2;
 }
@@ -568,9 +577,10 @@ img.quick-build{
 .app_design .content h2{
   width: 100%;
   padding: 20px 0 20px 30px;
+  color: wheat;
 }
 .app_slogan{
-  color: white;
+  color: rgb(255, 182, 0);
   font-size: 30px;
 }
 .content_right{
@@ -607,23 +617,24 @@ img.quick-build{
 }
 .parent_home_menu{
   position: relative;
-  background: rgba(121, 3, 98, 0.55);
   border-radius: 20px;
   padding: 15px 8px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+
 }
 .home_menu{
   list-style: none;
   padding: 0;
 }
-ion-icon {
-  font-size: 20px;
-  color: rgb(240, 255, 0);
-}
-ion-icon:hover{
-  color: rgb(240, 0, 255);
-}
 
-
+.home_menu img{
+  width: 18px;
+}
+.home_menu img:hover{
+  mix-blend-mode: hard-light;
+}
 
 a[data-tooltip].right:before, a[data-tooltip].right:after {
   transform: translateX(0px);
