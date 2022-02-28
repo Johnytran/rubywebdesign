@@ -9,7 +9,7 @@ body{
   position: relative;
 }
 .development{
-  width: 300px;
+  width: 500px;
 }
 .main-menu{
   list-style: none;
@@ -17,7 +17,7 @@ body{
   margin-top: 20px;
 }
 .top-150{
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .main-menu li{
   display: inline-block;
@@ -28,7 +28,26 @@ body{
 }
 .main-menu li a{
   color: white;
+  text-decoration: none;
+  position: relative;
 }
+.main-menu li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #b428c1;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.main-menu li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 img.logo{
   position: absolute;
   top: 20px;
