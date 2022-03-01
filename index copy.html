@@ -87,12 +87,75 @@
     </section>
 
     <!-- nail template -->
-    <section class="cd-section why">
-      <div class="container-fluid">
+    <section class="cd-section template">
+      <div class="container-fluid template" id="app">
+        <div class="row">
+          <div class="col-sm temp_head_col">
+            <img src="images/template_header.png" alt="The Nail Template World" class="img_tmpl_head"/>
+            <img src="images/slight2.png" alt="" class="sunlight"/>
+          </div>
+        </div>
         <div class="row">
           <div class="cols-sm-12">
             <div class="col-sm-2"></div>
             <div class="col-sm-10">
+              <div id="coverflow">
+                <ul class="flip-items">
+                    <li data-flip-title="Red">
+                      <!-- data-caption="<span class='siteDemo'><a class='btn btn-warning btn-lg btn-radius' href='https://vipnail.web.app' target='_blank'>Demo</a></span>" -->
+                      <div class="inner-item">
+                        <a
+                          data-fancybox="vipnail"
+                          data-src="img/vipnail.gif"
+
+                        >
+                          <img src="img/vipnails.gif" />
+                        </a>
+                      </div>
+                    </li>
+                    <!-- data-caption="<span class='siteDemo'><a class='btn btn-warning btn-lg btn-radius' href='https://peach-nail.web.app' target='_blank'>Demo</a></span>" -->
+                    <li>
+                      <div class="inner-item">
+                        <a
+                          data-fancybox="peachnail"
+                          data-src="img/peachnail.gif"
+
+                        >
+                          <img src="img/peachnails.gif" />
+                        </a>
+                      </div>
+                     </li>
+                     <!-- data-caption="<span class='siteDemo'><a class='btn btn-success btn-lg btn-radius' href='https://aloenail.web.app' target='_blank'>Demo</a></span>" -->
+                     <li>
+                       <div class="inner-item">
+                         <a
+                           data-fancybox="aloenail"
+                           data-src="img/aloe.gif"
+
+                         >
+                           <img src="img/aloe.gif" />
+
+                         </a>
+                       </div>
+                      </li>
+                </ul>
+              </div>
+              <script>
+                  var coverflow = $("#coverflow").flipster({
+                    fadeIn: 400,
+                    start: 'center',
+                    scrollwheel: false,
+                    touch: false,
+                    style: 'coverflow',
+                    autoplay: false,
+                    loop: true,
+                    spacing: -0.6,
+                    fadeIn: 400,
+                    itemContainer: 'ul',
+                    itemSelector: 'li',
+                    buttons: false
+                  });
+              </script>
             </div>
           </div>
         </div>
