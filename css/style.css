@@ -36,9 +36,11 @@ img.logo{
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-flow: column;
 }
 .intro-home h3{
   color: rgb(211, 196, 218);
+
 
 }
 .intro-home h3 span{
@@ -129,7 +131,23 @@ img.logo{
   font-size: 15px;
   color: #fff;
   border-radius: 10px;
+  flex: 1;
 }
+.standard .accordion-button{
+  padding: 0;
+}
+.standard .accordion-item{
+  border: 0;
+}
+.standard .accordion-button:not(.collapsed){
+  background: none;
+  box-shadow: none;
+}
+
+.standard .accordion-button::after,.standard .accordion-button:not(.collapsed)::after{
+  background: none;
+}
+
 /* logo page */
 .logo_design{
   background: none;
