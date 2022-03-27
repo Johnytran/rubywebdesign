@@ -9,6 +9,9 @@
 body{
   margin: 0;
   padding: 0;
+
+}
+.main-home{
   background-image: linear-gradient(120deg, #12053a 6%, #C850C0 100%);
 
 }
@@ -108,6 +111,11 @@ img.logo{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 400px) {
+  .why .bg-circle{
+    height: 350px;
+  }
 }
 .benefits-text h1{
   margin-top: 120px;
@@ -296,9 +304,28 @@ img.logo{
   padding: 20px;
 }
 .why{
-  background: rgb(228, 226, 228) url(../images/dot.jpeg);
+  position: relative;
+  background-image: url(../images/city_bg.jpg);
+  background-repeat: no-repeat;
   padding-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
+}
+.why::before{
+  content: "";
+  position: absolute;
+  background: linear-gradient(rgba(254, 254, 254, 0.6),
+                              rgba(255, 255, 255, 1) 0%,
+                              rgba(255, 255, 255, 0.6) 16.81%,
+                              rgba(255, 255, 255, 0.6) 47.48%,
+                              rgba(255, 255, 255, 0.86) 59.66%,
+                              rgba(255, 255, 255, 1) 72.27%);
+  top: 0;
+  left: 0;
+  height: 864px;
+  width: 100%;
+}
+.why .accordion-item, .why .accordion-button{
+  background: none;
 }
 .app_design .content h2{
   width: 100%;
