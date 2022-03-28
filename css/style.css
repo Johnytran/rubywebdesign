@@ -112,9 +112,18 @@ img.logo{
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .why .bg-circle{
     height: 350px;
+    width: 350px;
+  }
+  .why .benefits{
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .why .bg-circle{
+    height: 300px;
   }
 }
 .benefits-text h1{
@@ -154,6 +163,12 @@ img.logo{
 
 .standard .accordion-button::after,.standard .accordion-button:not(.collapsed)::after{
   background: none;
+}
+.foundation{
+  padding-left: 50px;
+}
+.foundation h2{
+  margin-top: 120px;
 }
 
 /* logo page */
