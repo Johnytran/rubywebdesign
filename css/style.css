@@ -175,7 +175,8 @@ img.logo{
 .logo_design{
   background: none;
   min-height: 668px;
-  background-image: radial-gradient(#4e4e50, #18181a);
+  background-image: radial-gradient(#8a5b96, #37023a);
+  margin-top: 100px;
   z-index: -2;
 }
 .logo_design h1{
@@ -185,6 +186,7 @@ img.logo{
   -webkit-text-fill-color: transparent;
   font-family: 'beautyregular';
   font-size: 55px;
+  margin-top: 30px;
 }
 .logo_design .content{
   min-height: 300px;
@@ -226,9 +228,9 @@ img.logo{
   box-sizing: border-box;
   color: #00a84f;
   display: block;
-  height: 50px;
-  font-size: 1.4em;
-  padding: 4px;
+  height: 30px;
+  font-size: 0.7em;
+  padding: 2px;
   position: relative;
   text-decoration: none;
   width: 9em;
@@ -236,6 +238,7 @@ img.logo{
   margin: auto;
   animation: bn53bounce 4s infinite;
   cursor: pointer;
+
 }
 @keyframes bn53bounce {
   5%,
