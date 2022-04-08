@@ -465,3 +465,87 @@ a[data-tooltip][data-position="right"]:after {
   top: calc(50% - 6px);
   left: calc(100% + 4px);
 }
+
+
+/*  */
+/* Circle */
+.hover15 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0px !important;
+    overflow: hidden;
+
+}
+
+.hover15::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(239, 172, 244, 0.4);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.hover15:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s;
+}
+.hover15 img{
+  transition: all .3s;
+}
+.hover15:hover img{
+  transform: scale(1.2);
+}
+@-webkit-keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+.tek{
+  position: relative;
+  top: 50%;
+}
+.owl-nav{
+  position: relative;
+}
+
+.tek .owl-carousel .owl-nav .owl-prev{
+  position: absolute;
+  left: 0;
+  color: rgb(164, 4, 144);
+  font-size: 30px;
+}
+.tek .owl-carousel .owl-nav .owl-next{
+  position: absolute;
+  right: 0;
+  color: rgb(164, 4, 144);
+  font-size: 30px;
+}
