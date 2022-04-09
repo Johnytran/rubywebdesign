@@ -13,10 +13,10 @@ body{
 }
 .main-home{
   background-image: linear-gradient(120deg, #12053a 6%, #C850C0 100%);
-
+  min-height: 768px;
 }
 .container-fluid{
-  min-height: 768px;
+
   position: relative;
 }
 .development{
@@ -551,4 +551,24 @@ a[data-tooltip][data-position="right"]:after {
   right: 0;
   color: rgb(164, 4, 144);
   font-size: 30px;
+}
+.footing{
+  background: linear-gradient(149deg, rgb(150, 147, 147), rgb(188, 190, 188) 21.01%, rgb(248, 250, 249) 99.16%);
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+.lienhe{
+
+}
+.lienhe h3{
+  font-size: 18px;
+}
+.lienhe p{
+  margin: 0;
+}
+.ketnoi{
+  margin: 20px 0 0;
+}
+.ketnoi h3{
+  font-size: 18px;
 }
