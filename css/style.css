@@ -560,7 +560,7 @@ a[data-tooltip][data-position="right"]:after {
 .lienhe{
 
 }
-.lienhe h3{
+.footing h3{
   font-size: 18px;
 }
 .lienhe p{
@@ -572,3 +572,40 @@ a[data-tooltip][data-position="right"]:after {
 .ketnoi h3{
   font-size: 18px;
 }
+
+.ketnoi .social{
+  display: flex;
+}
+.ketnoi .social a{
+  text-decoration: none;
+  width: 42px;
+  height: 42px;
+  background: #9c0f9f;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+.baogia{
+  margin-top: 40px;
+}
+.baogia .form-group{
+    margin-bottom: 15px;
+}
+.baogia .form-group input, .baogia .form-group textarea{
+    background: rgb(193, 192, 192);
+}
+.baogia .btn-primary{
+    display: block;
+    width: 130px;
+    margin: auto;
+    background: rebeccapurple;
+    height: 35px;
+    padding: 0;
+    border-radius: 20px;
+}
+.baogia .btn-primary:hover{
+    background: rgb(160, 43, 181);
+}
+
