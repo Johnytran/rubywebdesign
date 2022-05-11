@@ -182,7 +182,7 @@ img.logo{
   margin-top: 100px;
   z-index: -2;
 }
-.logo_design h1{
+.logo_design h1, .app_design h1{
   text-align: center;
   background: -webkit-linear-gradient(#bf953f, #fcf6ba 28.99%, #b38728 51.26%, #fbf5b7 74.79%, #aa771c);
   -webkit-background-clip: text;
@@ -190,6 +190,7 @@ img.logo{
   font-family: 'beautyregular';
   font-size: 55px;
   margin-top: 30px;
+  line-height: 80px;
 }
 .logo_design .content{
   min-height: 300px;
@@ -659,4 +660,8 @@ a[data-tooltip][data-position="right"]:after {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.standard h1{
+  margin: 30px 0;
 }
