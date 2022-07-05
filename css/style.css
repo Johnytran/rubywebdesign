@@ -17,7 +17,7 @@ body{
 }
 .container-fluid{
 
-  position: relative;
+  /*position: relative;*/
 }
 .development{
   width: 100%;
