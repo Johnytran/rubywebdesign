@@ -26,3 +26,5 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+lightGallery(document.getElementById('lightgallery'));
