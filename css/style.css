@@ -305,7 +305,32 @@ img.logo{
   top: 50%;
   left: 50%;
   border-radius: 5px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale3d(1, 1, 1);
+  transition: transform 0.15s ease 0s;
+}
+.box:hover img{
+  transform: translate(-50%, -50%) scale3d(1.1, 1.1, 1.1);
+}
+.box .hovereffect{
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background-color 0.15s ease 0s;
+  border-radius: 5px;
+}
+.box .hovereffect:hover
+{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.box .hovereffect:hover img{
+  opacity: 1;
+}
+.box .hovereffect img{
+  width: 50px;
+  opacity: 0;
 }
 
 .app_design{
