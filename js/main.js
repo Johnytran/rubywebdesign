@@ -5,8 +5,9 @@ owl.owlCarousel({
     lazyLoad : true,
     margin:10,
     autoplay:true,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
+    slideBy: 2
 });
 
 function reveal() {
