@@ -28,4 +28,10 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-lightGallery(document.getElementById('lightgallery'));
+
+lightGallery(document.getElementById('lightgallery'), {
+    animateThumb: false,
+    zoomFromOrigin: false,
+    allowMediaOverlap: true,
+    toggleThumb: true,
+});

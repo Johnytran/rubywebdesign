@@ -11,6 +11,10 @@ body{
   padding: 0;
 
 }
+.hide{
+  display: none;
+}
+
 .main-home{
   background-image: linear-gradient(120deg, #12053a 6%, #C850C0 100%);
   min-height: 768px;
