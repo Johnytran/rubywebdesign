@@ -16,14 +16,15 @@
 
     <link href="css/lightgallery.css" rel="stylesheet">
 
-
     <script src='js/jquery.min.js'></script>
+    
 
     <script src='js/bootstrap.min.js'></script>
     <script src="js/owl.carousel.min.js"></script>
 
 
     <script src="js/carausol_slider.js"></script>
+
   </head>
   <body>
 
@@ -340,16 +341,18 @@
               </div>
 
             </div>
+            
             <div class="col-sm-5">
               <div class="content" >
                   <h2>Apps On Store</h2>
-                  <div class="box" id="lightgallery">
-                    <a href="media/pte/001.png" data-src="media/pte/001.png">
+                  <div class="box" id="video-gallery">
+                    <a data-poster="media/pte/001.png" data-sub-html="PTE Zone" data-html="#video1">
                       <img src="images/ptezone.png" />
                       <div class="hovereffect">
                           <img src="img/play-button.png">
                       </div>
                     </a>
+                    
                     <a href="media/pte/002.png" class="hide">
                       <img src="media/pte/002.png" />
                     </a>
@@ -365,6 +368,8 @@
                     <a href="media/pte/006.png" class="hide">
                       <img src="media/pte/006.png" />
                     </a>
+                    
+                    
                   </div>
 
                   <div class="box">
@@ -453,9 +458,24 @@
     </section>
 
     <script src="js/lightgallery.min.js"></script>
+    <script src="js/lg-video.min.js"></script>
     <script src="js/lg-thumbnail.js"></script>
-    <script src="js/lg-autoplay.js"></script>
     <script src="js/main.js"></script>
 
+    <div style="display: none;" id="video1">
+        <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
+            <source src="media/pte.mp4" type="video/mp4">
+             Your browser does not support HTML5 video.
+        </video>
+    </div>
+    
+     
+    <!-- data-src should not be provided when you use html5 videos -->
+    
+    <script type="text/javascript">
+      lightGallery(document.getElementById('video-gallery'), {
+          videojs: true
+      }); 
+    </script>
   </body>
 </html>
