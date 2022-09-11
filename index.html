@@ -345,7 +345,7 @@
             <div class="col-sm-5">
               <div class="content" >
                   <h2>Apps On Store</h2>
-                  <div class="box" id="video-gallery">
+                  <div class="box" id="pte-gallery">
                     <a data-poster="media/pte/001.png" data-sub-html="PTE Zone" data-html="#video1">
                       <img src="images/ptezone.png" />
                       <div class="hovereffect">
@@ -372,8 +372,13 @@
                     
                   </div>
 
-                  <div class="box">
-                    <img src="images/meditation.png"/>
+                  <div class="box" id="meditation-gallery">
+                    <a data-poster="media/meditation_cover.png" data-sub-html="eMeditation" data-html="#meditation">
+                      <img src="images/meditation.png"/>
+                      <div class="hovereffect">
+                          <img src="img/play-button.png">
+                      </div>
+                    </a>
                   </div>
                   <div class="box">
                     <img src="images/videosplay.png"/>
@@ -464,16 +469,24 @@
 
     <div style="display: none;" id="video1">
         <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
-            <source src="media/pte.mp4" type="video/mp4">
+            <source src="media/pte.mov" type="video/mp4">
              Your browser does not support HTML5 video.
         </video>
     </div>
-    
+    <div style="display: none;" id="meditation">
+        <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
+            <source src="media/meditation.mov" type="video/mp4">
+             Your browser does not support HTML5 video.
+        </video>
+    </div>
      
     <!-- data-src should not be provided when you use html5 videos -->
     
     <script type="text/javascript">
-      lightGallery(document.getElementById('video-gallery'), {
+      lightGallery(document.getElementById('pte-gallery'), {
+          videojs: true
+      }); 
+      lightGallery(document.getElementById('meditation-gallery'), {
           videojs: true
       }); 
     </script>
